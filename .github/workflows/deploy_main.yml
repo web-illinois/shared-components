@@ -1,0 +1,27 @@
+name: deploy_main
+on:
+  push:
+    branches: [ 'main' ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Get Version
+      id: get_version
+      uses: battila7/get-version-action@v2
+
+    - run: npm install
+    - run: npm rebuild
+    - run: npm run-script gulp
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: 'AKIAXNR47MADGK2A4HEW'
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-2
+
+    - name: Deploy examples to S3 bucket 
+      run: aws s3 sync . s3://contrib.webtheme.illinois.edu/content/ --delete
+    - name: Invalidate Cloudfront cache
+      run: aws cloudfront create-invalidation --distribution-id	E7ORJKLXVSNH3 --paths "/*"

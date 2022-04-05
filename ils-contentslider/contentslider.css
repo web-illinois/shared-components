@@ -1,0 +1,32 @@
+.ils-contentslider-calendar {
+    border: solid 1px var(--il-gray-2);
+    width: 281px;
+    height: 266px;
+    text-align: center;
+    padding: 20px;
+}
+
+.ils-contentslider-calendar h2, .ils-contentslider-calendar h3, .ils-contentslider-calendar h4 {
+    font-size: 3.5rem;  
+    line-height: 3.5rem;
+    text-align: center;  
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--il-orange);
+}
+
+.ils-contentslider-calendar p {
+    font-size: 1.6rem;  
+    line-height: 1.8rem;
+    text-align: center;  
+    font-weight: 700;
+    color: var(--il-blue);
+}
+
+.ils-contentslider-calendar p.time {
+    font-size: 1.3rem;  
+    line-height: 1.3rem;
+    text-align: center;  
+    font-weight: 700;
+    color: var(--il-orange);
+}

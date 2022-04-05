@@ -1,0 +1,19 @@
+{
+  "name": "ils-shared-components",
+  "version": "1.0.0",
+  "description": "WIGG Shared Components",
+  "repository": "",
+  "author": "Web Implementation Guidelines Group",
+  "license": "NCSA",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "*",
+    "gulp-uglify": "*",
+    "gulp-cssmin": "*",
+    "gulp-terser": "*"
+  }
+}
