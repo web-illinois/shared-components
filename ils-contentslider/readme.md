@@ -12,12 +12,12 @@ Development on 4/5/2022
 
 Requires Illinois Toolkit, any version. Everything else is vanilla javascript/CSS.
 
-[Example of use](https://community.webtheme.illinois.edu/ils-contentslider/example.html)
+[Example of use](https://contrib.webtheme.illinois.edu/ils-contentslider/example.html)
 
 Required code to use
 
-    <script src="//community.webtheme.illinois.edu/ils-contentslider/contentslider.min.js"></script>
-    <link rel="stylesheet" href="//community.webtheme.illinois.edu/ils-contentslider/contentslider.min.css" media="all">
+    <script src="//contrib.webtheme.illinois.edu/ils-contentslider/contentslider.min.js"></script>
+    <link rel="stylesheet" href="//contrib.webtheme.illinois.edu/ils-contentslider/contentslider.min.css" media="all">
     
 ## Userlist
 

@@ -14,7 +14,7 @@ If you need a component, first check to see if someone else wants it! Go to the 
 
 If you want to contribute a component, again, first check to see if someone else wants it or if someone else built it already. Go to the ["Need Component" issue section](https://github.com/web-illinois/shared-components/labels/need%20component) and scan if something there meets your needs. If no one needs it, [create an issue](https://github.com/web-illinois/shared-components/issues) and give it the "Have Component" label. 
 
-If you wish to use an existing component, you can either access the files directly on https://community.webtheme.illinois.edu, or copy the files and host them on your website. Because this is tied to the Illinois Toolkit, you should have this installed on your website. 
+If you wish to use an existing component, you can either access the files directly on https://contrib.webtheme.illinois.edu, or copy the files and host them on your website. Because this is tied to the Illinois Toolkit, you should have this installed on your website. 
 
 ## Rules (or "How to Get Along")
 
@@ -53,7 +53,7 @@ Shared components should have a README.md file at their root directory.
 
 ## Continuous Integration and Gulp
 
-Any changes to the main branch gets pushed to the https://community.webtheme.illinois.edu site. Please make sure you create a branch with your Net ID, merge to develop, then merge to main. Do not make changes directly to the main branch or develop branch. 
+Any changes to the main branch gets pushed to the https://contrib.webtheme.illinois.edu site. Please make sure you create a branch with your Net ID, merge to develop, then merge to main. Do not make changes directly to the main branch or develop branch. 
 
 This project has a gulp project. As more projects get built, you can use this to run gulp tasks. Do not add tasks directly to the gulp file -- include the gulp file in the main gulp file, then trigger it in the main gulp file. 
 
