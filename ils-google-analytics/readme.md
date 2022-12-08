@@ -1,4 +1,4 @@
-# Google Analytics
+# ils-google-analytics
 
 ## Author
 
@@ -13,7 +13,7 @@ Development on 12/08/2022
 [Example of use](https://contrib.webtheme.illinois.edu/ils-google-analytics/example.html)
 
 Has one attribute:
-* data-ils-measurement: the measurement ID. You can include multiple IDs, separated by a space.
+* measurement: the measurement ID. You can include multiple IDs, separated by a space.
 
 Required code to use:
 
