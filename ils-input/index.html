@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="dns-prefetch" href="https://cdn.toolkit.illinois.edu">
+    <link rel="icon" href="https://cdn.brand.illinois.edu/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.toolkit.illinois.edu/2.14/toolkit.css" media="all">
+    <script src="https://cdn.toolkit.illinois.edu/2.14/toolkit.js"></script>
+    <link rel="stylesheet" href="input.css" media="all">
+    <script src="input.js"></script>
+    <title>Form Design Samples</title>
+</head>
+
+<body>
+    <il-section class="il-fixed-width il-formatted">
+        <h1>Form Information</h1>
+        <p>Sample form pieces.</p>
+        <div class="ils-input-entry">
+            <label for="textbox">Text Box </label>
+            <input id="textbox" type="text">
+        </div>
+        <div class="ils-input-entry">
+            <label for="textbox2">Text Box With a Really Long Label that extends to at least three lines </label>
+            <input id="textbox2" type="text">
+        </div>
+        <div class="ils-input-entry">
+            <label for="textbox-short">Short Text Box </label>
+            <input id="textbox-short" type="text" class="ils-input-short">
+        </div>
+        <div class="ils-input-entry">
+            <label for="textbox-long">Long Text Box </label>
+            <input id="textbox-long" type="text" class="ils-input-long">
+        </div>
+        <div class="ils-input-entry">
+            <label for="textbox-instructions">Text Box With Instructions</label>
+            <input id="textbox-instructions" type="text">
+            <p>Some explanatory text which might get long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque est turpis, quis facilisis sem bibendum quis. Vestibulum finibus rutrum leo at imperdiet. Proin porta odio ut laoreet pharetra. Aenean sit amet blandit nisl, nec scelerisque orci. Donec sagittis nisi aliquet quam molestie pharetra. Suspendisse tincidunt, eros sit amet aliquet malesuada, lectus elit ultricies mauris, in vehicula odio nisl quis massa. Morbi commodo est sit amet elit aliquet malesuada.</p>
+        </div>
+        <div class="ils-input-entry">
+            <label for="textbox-long-instructions">Long Text Box With Instructions</label>
+            <input id="textbox-long-instructions" type="text" class="ils-input-long">
+            <p>Some explanatory text which might get long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque est turpis, quis facilisis sem bibendum quis. Vestibulum finibus rutrum leo at imperdiet. Proin porta odio ut laoreet pharetra. Aenean sit amet blandit nisl, nec scelerisque orci. Donec sagittis nisi aliquet quam molestie pharetra. Suspendisse tincidunt, eros sit amet aliquet malesuada, lectus elit ultricies mauris, in vehicula odio nisl quis massa. Morbi commodo est sit amet elit aliquet malesuada.</p>
+        </div>
+        <h2>Heading example</h2>
+        <div class="ils-input-entry">
+            <label for="textbox-required">Required Text Box </label>
+            <input id="textbox-required" type="text" required>
+        </div>
+        <div class="ils-input-entry">
+            <label for="textbox-required-long">Required Long Text Box </label>
+            <input id="textbox-required-long" type="text" class="ils-input-long" required>
+        </div>
+        <div class="ils-input-entry">
+            <label for="textarea">Text Area </label>
+            <textarea id="textarea"></textarea>
+        </div>
+        <div class="ils-input-entry">
+            <label for="textarea-required">Required Text Area </label>
+            <textarea id="textarea-required" required></textarea>
+        </div>
+        <div class="ils-input-entry">
+            <label for="checkbox">Checkbox </label>
+            <input id="checkbox" type="checkbox">
+        </div>
+        <div class="ils-input-entry">
+            <label for="datetime-local">Date/Time Picker </label>
+            <input type="datetime-local" id="datetime-local" value="">
+        </div>
+        <div class="ils-input-entry">
+            <label for="datetime-local-step">Date/Time Picker, using step </label>
+            <input type="datetime-local" id="datetime-local-step" value="" step="36000">
+        </div>
+        <div class="ils-input-entry">
+            <label for="date">Date Picker </label>
+            <input type="date" id="date" value="">
+        </div>
+        <div class="ils-input-entry">
+            <label for="datalist">Autocomplete</label>
+            <input id="datalist" list="select" type="text" placeholder="Choose an Item">
+            <datalist id="select" class="select">
+                <option value="First Item"></option>
+                <option value="Second Item"></option>
+                <option value="Third Item"></option>
+            </datalist>
+            <p>The data list is used to give a user free-text options, but prompt them to choose a specific item. You can use JavaScript to enforce that what they choose is one of the options. <em>To start out, try typing "item"</em></p>
+        </div>
+        <div class="ils-input-entry">
+            <label for="dropdown">Dropdown </label>
+            <select id="dropdown" name="dropdown">
+                <option value="">Choose one</option>
+                <option value="1">First Item</option>
+                <option value="2">Second Item</option>
+                <option value="3">Third Item</option>
+            </select>
+        </div>
+        <div class="ils-input-entry">
+            <label for="dropdown">Long Dropdown </label>
+            <select id="dropdown" name="dropdown" class="ils-input-long">
+                <option value="">Choose one</option>
+                <option value="1">First Item</option>
+                <option value="2">Second Item</option>
+                <option value="3">Third Item</option>
+            </select>
+        </div>
+        <div class="ils-input-entry">
+            <button class="il-button" disabled>Disabled button </button>
+        </div>
+        <div class="ils-input-entry-radio">
+            <p>Radio Buttons Title </p>
+            <input type="radio" id="radio1" name="radio" value="1">
+            <label for="radio1">First Item</label>
+            <input type="radio" id="radio2" name="radio" value="2">
+            <label for="radio2">Second Item</label>
+            <input type="radio" id="radio3" name="radio" value="3">
+            <label for="radio3">Third Item</label>
+        </div>
+        <div class="ils-input-entry-radio-vertical">
+            <p>Vertical Radio Buttons Title </p>
+            <input type="radio" id="radio1-v" name="radio-v" value="1">
+            <label for="radio1-v">First Item</label>
+            <input type="radio" id="radio2-v" name="radio-v" value="2">
+            <label for="radio2-v">Second Item</label>
+            <input type="radio" id="radio3-v" name="radio-v" value="3">
+            <label for="radio3-v">Third Item</label>
+        </div>
+        <div class="ils-input-entry">
+            <label>Toggle Button, starts disabled</label>
+            <button id="toggle" class="il-button" aria-pressed="false" data-ils-input-on="Enabled" data-ils-input-off="Disabled"></button>
+            <p>This should be used when the effect happens immediately.</p>
+        </div>
+        <div class="ils-input-entry">
+            <label>Toggle Button, starts enabled</label>
+            <button id="toggle-enabled" class="il-button" aria-pressed="true" data-ils-input-on="Enabled" data-ils-input-off="Disabled"></button>
+        </div>
+        <div class="ils-input-disclaimer">
+            <label for="disclaimer">The opinions, resources, and referrals provided on this website are intended for
+                informational purposes only and are not intended to take the place of medical or legal advice, or of
+                other appropriate services. We encourage you to seek direct local assistance from a qualified
+                professional if necessary before taking action.</label>
+            <input id="disclaimer" type="checkbox">
+        </div>
+        <fieldset>
+            <legend>Field Set Title</legend>
+            <div class="ils-input-entry">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname" class="ils-input-long">
+            </div>
+            <div class="ils-input-entry">
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname">
+            </div>
+            <div class="ils-input-entry">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="ils-input-entry">
+                <input type="submit" value="Send Information" class="il-button ils-input-no-label">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Field Set Radio Buttons</legend>
+            <div class="ils-input-entry">
+                <label for="radio1-fs">First Item</label>
+                <input type="radio" id="radio1-fs" name="radio-fs" value="1">
+            </div>
+            <div class="ils-input-entry">
+                <label for="radio2-fs">Second Item</label>
+                <input type="radio" id="radio2-fs" name="radio-fs" value="2">
+            </div>
+            <div class="ils-input-entry">
+                <label for="radio3-fs">Third Item</label>
+                <input type="radio" id="radio3-fs" name="radio-fs" value="3">
+            </div>
+        </fieldset>
+        <div class="ils-input-alert">Alert for forms</div>
+    </il-section>
+</body>
+
+</html>
