@@ -1,0 +1,194 @@
+:root {
+    --ils-input-form-label-width: 225px;
+    --ils-input-form-vertical-label-width: 125px;
+}
+
+.il-formatted .ils-input-alert {
+    color: red;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.il-formatted .ils-input-entry {
+  display: grid;
+  align-items: center;
+  margin: auto;
+  grid-template-columns: var(--ils-input-form-label-width) auto;
+  margin: 20px 0;
+}
+
+.il-formatted .ils-input-entry button, .il-formatted .ils-input-entry input[type="submit"] {
+  grid-column: 2;
+  width: fit-content;
+}
+
+.il-formatted .ils-input-entry p {
+  grid-column: 2;
+  margin-top: 0;
+  font-size: .9rem;
+}
+
+.il-formatted .ils-input-entry-radio {
+  display: grid;
+  align-items: center;
+  grid-template-columns: var(--ils-input-form-label-width) 20px auto;
+  margin: 20px 0;
+}
+
+.il-formatted .ils-input-entry-radio p {
+  text-align: right;
+  margin: 0 15px 0 0;
+  font-weight: 600;
+  line-height: 1.4rem;
+}
+
+.il-formatted .ils-input-entry-radio input {
+  grid-column: 2;
+  margin: 5px 0;
+}
+
+.il-formatted .ils-input-entry-radio label {
+  grid-column: 3;
+  margin: 0 20px 0 5px;
+  text-align: left;
+}
+
+.il-formatted .ils-input-entry-radio-vertical {
+  display: grid;
+  align-items: center;
+  grid-template-columns: var(--ils-input-form-label-width) repeat(auto-fill, 20px var(--ils-input-form-vertical-label-width));
+  margin: 20px 0;
+}
+
+.il-formatted .ils-input-entry-radio-vertical p {
+  text-align: right;
+  margin: 0 15px 0 0;
+  font-weight: 600;
+  line-height: 1.4rem;
+}
+
+.il-formatted .ils-input-entry-radio-vertical label {
+  margin: 0 20px 0 5px;
+  text-align: left;
+}
+
+  .il-formatted label {
+    margin: 0 15px 0 0;
+    text-align: right;
+    line-height: 1.3em;
+  }
+
+  .il-formatted .ils-input-no-label input, .il-formatted input.ils-input-no-label {
+    grid-column: 2;
+  }
+
+  .il-formatted fieldset, .il-formatted .ils-input-disclaimer {
+    padding: 20px;
+    margin: 20px auto;
+    border: thin solid var(--il-orange);
+  }
+
+  .il-formatted .ils-input-disclaimer {
+    display: flex;
+    align-items: center;
+  }
+
+  .il-formatted .ils-input-disclaimer label {
+    width: initial;
+    margin: 0 15px 0 0;
+    text-align: left;
+  }
+
+  .il-formatted .ils-input-disclaimer input {
+    width: 50px;
+    flex: 0 0 50px;
+  }
+
+  .il-formatted legend {
+    font-weight: 600;
+    padding: 0 5px;
+  }
+
+  .il-formatted select, .il-formatted input, .il-formatted textarea, .il-formatted datalist, .il-formatted datalist option {
+    margin: 0;
+    border-radius: 5px;
+    padding: 10px;
+    font: 16px/18px var(--il-source-sans);
+    background-color: #fff;
+    border: thin var(--il-blue) solid;
+    width: 200px;
+  }
+
+  .il-formatted input.ils-input-long, .il-formatted textarea, .il-formatted select.ils-input-long {
+    width: calc(100% - 20px);
+  }
+
+  .il-formatted input[type="checkbox"], .il-formatted input[type="radio"] {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .il-formatted input.ils-input-short {
+    width: 100px;
+  }
+
+  .il-formatted input:focus, .il-formatted textarea:focus, .il-formatted select:focus, .il-formatted input:focus-visible, .il-formatted textarea:focus-visible, .il-formatted select:focus-visible {
+    background: var(--il-cloud);
+    outline: 3px solid var(--il-altgeld);
+  }
+
+  .il-formatted input:hover, .il-formatted textarea:hover, .il-formatted select:hover {
+    background: var(--il-cloud);
+  }
+
+  .ils-label-required::after {
+    content: '*';
+    font-size: 2em;
+    vertical-align: middle;
+    vertical-align: -moz-middle-with-baseline;
+    padding-left: 2px;
+    color: var(--il-altgeld);  
+  }
+  
+  .il-formatted button[disabled], .il-formatted button[disabled]:focus, .il-formatted button[disabled]:hover {
+    background: var(--il-gray-1);
+    color: var(--il-gray-2);
+    border-color: var(--il-gray-2);
+}
+
+  .il-formatted button[aria-pressed] {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .il-formatted button[aria-pressed] span {
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 768px) {
+    .il-formatted .ils-input-entry {
+        display: block;
+    }
+    .il-formatted textarea, .il-formatted label {
+        text-align: left;
+    }
+    .il-formatted label {
+        margin-top: 20px;
+    }
+    .il-formatted input {
+      display: block;
+    }
+    .il-formatted input[type="checkbox"], .il-formatted input[type="radio"] {
+      display: inline-block;
+    }
+    .il-formatted input.ils-input-no-label {
+      margin-left: initial;
+    }    
+    .il-formatted .ils-input-entry-radio-vertical {
+      display: block;
+    }
+    .il-formatted .ils-input-entry-radio-vertical p {
+      text-align: left;
+    }
+  }
