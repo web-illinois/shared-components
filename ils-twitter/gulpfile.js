@@ -9,4 +9,4 @@ gulp.task("scripts", function () {
         .pipe(gulp.dest("ils-twitter/"));
 });
 
-gulp.task("ils-twitter", gulp.series("scripts", "styles"));
+gulp.task("ils-twitter", gulp.series("scripts"));

@@ -1,0 +1,43 @@
+.ils-status .row {
+    display: flex;
+}
+
+.ils-status .bubble {
+    width: 100px;
+    margin: 10px 30px;
+}
+
+.ils-status .bubble div {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.ils-status .bubble .green {
+    background: #0a0;
+    font-weight: bold;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    font-size: 2.5rem;
+  }
+
+  .ils-status .bubble .yellow {
+    background: #ffbe00;
+    font-weight: bold;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    font-size: 2.5rem;
+  }
+
+  .ils-status .bubble .red {
+    background: #ff3b3b;
+    font-weight: bold;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    font-size: 2.5rem;
+  }
+
