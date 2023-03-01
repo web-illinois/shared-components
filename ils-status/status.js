@@ -1,6 +1,9 @@
 window.addEventListener('load', (event) => {
-    checkStatus();
-    setInterval(function () { checkStatus(); }, 12000);
+    var target = document.querySelector('div.ils-status');
+    if (target && target != null) {
+        checkStatus();
+        setInterval(function () { checkStatus(); }, 12000);
+    }
 });
 
 function checkStatus() {
