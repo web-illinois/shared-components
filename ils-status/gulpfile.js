@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var terser = require("gulp-terser");
 var concat = require("gulp-concat");
+var cssmin = require('gulp-cssmin');
 
 gulp.task("scripts", function () {
     return gulp.src(['ils-status/status.js'])
