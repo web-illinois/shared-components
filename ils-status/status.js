@@ -17,14 +17,14 @@ function checkStatus() {
             if (data.DownServices.length > 0) {
                 target.innerHTML += '<p>The following services are down</p><ul>';
                 data.DownServices.forEach(d => {
-                    target.innerHTML += `<li><a href=${d.Url}>${d.Name}</a></li>`
+                    target.innerHTML += `<li><a href=${d.Url}>${d.Name}</a><br>${d.Incident}</li>`
                 });
                 target.innerHTML += '</ul>'
             }
             if (data.AffectedServices.length > 0) {
                 target.innerHTML += '<p>The following services are affected</p><ul>';
                 data.AffectedServices.forEach(a => {
-                    target.innerHTML += `<li><a href=${a.Url}>${a.Name}</a></li>`
+                    target.innerHTML += `<li><a href=${a.Url}>${a.Name}</a><br>${a.Incident}</li>`
                 });
                 target.innerHTML += '</ul>'
             }
