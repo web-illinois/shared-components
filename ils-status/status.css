@@ -1,5 +1,6 @@
-.ils-status .ils-status-row {
+.ils-status ul.ils-status-row {
     display: flex;
+    list-style: none;
 }
 
 .ils-status #ils-status-link {
@@ -11,9 +12,10 @@
   outline: 1px solid black;
 }
 
-.ils-status .ils-status-bubble {
+.ils-status li.ils-status-bubble {
     width: 100px;
     margin: 10px 30px;
+    list-style: none;
 }
 
 .ils-status .ils-status-bubble span {
