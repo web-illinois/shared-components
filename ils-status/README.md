@@ -31,6 +31,10 @@ The passthrough query is at https://statushub.itpartners.illinois.edu/api/GetSim
 
 The github for this middleware project is at https://github.com/itpartnersillinois/StatusSupport.
 
+## Usage Note
+
+If this is a free-standing area in your page, make sure you add "Status at Illinois" header using the appropriate heading level (h2, h3, h4, etc.)
+
 ## Possible expansions
 
 Right now, this is just an simple passthrough of the status with caching enabled. We can add additional components in this to alter the JSON feed and display it appropriately. 
