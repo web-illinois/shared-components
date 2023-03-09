@@ -1,20 +1,29 @@
-.ils-status .row {
+.ils-status .ils-status-row {
     display: flex;
 }
 
-.ils-status .bubble {
+.ils-status #ils-status-link {
+  text-decoration: none;
+  color: black;
+}
+
+.ils-status #ils-status-link:hover .ils-status-bubble span, .ils-status #ils-status-link:focus .ils-status-bubble span {
+  outline: 1px solid black;
+}
+
+.ils-status .ils-status-bubble {
     width: 100px;
     margin: 10px 30px;
 }
 
-.ils-status .bubble div {
+.ils-status .ils-status-bubble span {
     justify-content: center;
     display: flex;
     align-items: center;
     text-transform: uppercase;
 }
 
-.ils-status .bubble .green {
+.ils-status .ils-status-bubble .ils-status-green {
     background: #0a0;
     font-weight: bold;
     height: 100px;
@@ -23,7 +32,7 @@
     font-size: 2.5rem;
   }
 
-  .ils-status .bubble .yellow {
+  .ils-status .ils-status-bubble .ils-status-yellow {
     background: #ffbe00;
     font-weight: bold;
     height: 100px;
@@ -32,7 +41,7 @@
     font-size: 2.5rem;
   }
 
-  .ils-status .bubble .red {
+  .ils-status .ils-status-bubble .ils-status-red {
     background: #ff3b3b;
     font-weight: bold;
     height: 100px;
