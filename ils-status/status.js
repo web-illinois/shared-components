@@ -1,9 +1,9 @@
 window.addEventListener('load', (event) => {
-    let target = document.querySelector('div.ils-status');
-    if (target && target != null) {
-        checkStatus();
-        setInterval(function () { checkStatus(); }, 12000);
-    }
+    const targets = Array.from(document.querySelectorAll('div.ils-status'));
+    targets.forEach(target => {
+        checkStatus(target);
+        setInterval(function () { checkStatus(target); }, 12000);
+      });
 });
 
 const dataSourceSimple = 'https://statushub.itpartners.illinois.edu/api/GetSimpleStatus?name=illinois';
@@ -15,8 +15,7 @@ async function fetchData(dataSource){
     return data;
 }
 
-async function checkStatus() {
-    let target = document.querySelector('div.ils-status');
+async function checkStatus(target) {
     let serviceids = target.getAttribute('data-ils-status-serviceids');
     if (serviceids && serviceids != null) {
         let daysahead = target.getAttribute('data-ils-status-daysahead');
@@ -72,14 +71,17 @@ function simpleStatusTemplate(target, data) {
 
 function alertTemplate(target, data, templateName){
     let template = data.DownServices;
-    let alert ='';
-    if(templateName == 'maintenance'){template = data.MaintenanceServices;}
-    if(templateName == 'affected'){template = data.AffectedServices;}
+    let label = 'Down - ';
+    let style = 'danger';
+    let alert ='', date='';
+    if(templateName == 'maintenance'){template = data.MaintenanceServices; label = 'Maintenance - '; style = 'warning';}
+    if(templateName == 'affected'){template = data.AffectedServices; label = 'Affected  - '; style = 'warning';}
     template.forEach(d => {
+        if(templateName == 'maintenance'){date = d.StartDate.substr(0, 5); label = 'Maintenance ('+ date +') - ';}
         alert += `
-        <div class="ils-status-alert ils-status-alert-warning">
+        <div class="ils-status-alert ils-status-alert-${style}">
             <h2 class="ils-status-sr-only">Status alert announcement</h2>
-            <span>${d.Incident}. Click <a title="Alert information" href="${d.Url}">here</a> for more information.</span>
+            <span>${label}</span> <a title="Alert information" href="${d.Url}"> ${d.Incident} </a> 
         </div>`;
     })
   

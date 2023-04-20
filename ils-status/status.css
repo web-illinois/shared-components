@@ -66,6 +66,12 @@
   border-color: #ffeeba;
 }
 
+.ils-status-alert-danger {
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+}
+
 .ils-status-sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0); 
   clip-path: inset(50%);
