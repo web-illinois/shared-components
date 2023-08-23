@@ -1,9 +1,9 @@
 .il-footer-social a[href*="twitter.com/"]::before {
     content: '';
     display: block;
-    width: 35px;
-    height: 30px;
-    margin-top: 9px;
+    width: 28px;
+    height: 25px;
+    margin: 12px 0 0 6px;
     background-color: white;
     -webkit-mask-image: url(//contrib.webtheme.illinois.edu/ils-xtwitter/xtwitter.svg);
     mask-image: url(//contrib.webtheme.illinois.edu/ils-xtwitter/xtwitter.svg);
