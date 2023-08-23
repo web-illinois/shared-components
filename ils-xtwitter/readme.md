@@ -17,7 +17,9 @@ Requires Illinois Toolkit, v2.
 Required code to use:
 
     <link rel="stylesheet" href="//contrib.webtheme.illinois.edu/ils-xtwitter/xtwitter.min.css" media="all">
-    
+
+[Example of use](https://contrib.webtheme.illinois.edu/ils-xtwitter/example.html)
+   
 ## Userlist
 
 
