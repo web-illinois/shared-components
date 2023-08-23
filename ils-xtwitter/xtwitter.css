@@ -1,0 +1,14 @@
+.il-footer-social a[href*="twitter.com/"]::before {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 30px;
+    margin-top: 9px;
+    background-color: white;
+    -webkit-mask-image: url(//contrib.webtheme.illinois.edu/ils-xtwitter/xtwitter.svg);
+    mask-image: url(//contrib.webtheme.illinois.edu/ils-xtwitter/xtwitter.svg);
+}
+
+.il-footer-social a[href*="twitter.com/"]:hover::before, .il-footer-social a[href*="twitter.com/"]:focus::before {
+    background-color: var(--il-orange);
+}
