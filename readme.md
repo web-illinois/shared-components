@@ -1,12 +1,24 @@
-# WIGG Shared Components
+# Shared Components
 
 ## What is this? 
 
-This contains code that small groups have built to make their life easier in coordination with the [Illinois Toolkit](https://go.illinois.edu/webtoolkit). Unlike [the formal WIGG groups](https://webtheme.illinois.edu/about/), this is distributed and "bottom-up" -- a way to crowdsource and share solutions without having to merge these changes to a common codebase.
+This contains code that small groups have built to make their life easier. Unlike [Illinois Toolkit](https://go.illinois.edu/webtoolkit) and [the formal WIGG groups](https://webtheme.illinois.edu/about/), this is distributed and "bottom-up" -- a way to crowdsource and share solutions without having to merge these changes to a common codebase.
 
 Shared components may be formal web components, javascript that checks for "data-" tags, or CSS classes that help with formatting (or all three). Shared components should be usable across multiple platforms. We recommend keeping the dependencies needed to use a shared component to a minimum. 
 
-Because this is distributed, WIGG doesn't have any code review process in terms of accessibility, security, cross-platform use, or usability. 
+## Use and Expectations
+
+Because this is distributed, WIGG doesn't have any code review process in terms of accessibility, security, cross-platform use, or usability. **Everything is a *use as is*.**
+
+Authors are responsible for their own components inside this github repository.
+
+Unlike the Illinois Toolkit, these packages are kept separately and need to be added individually through HTML. If you want these built in a package to be used widespread, consider creating a new repository and adding a package maanger to manage distribution. 
+
+### Continuous Integration and Gulp
+
+Any changes to the main branch gets pushed to the `https://contrib.webtheme.illinois.edu` site. Please make sure you create a branch with your Net ID, merge to develop, then merge to main. Do not make changes directly to the main branch or develop branch. 
+
+This project has a gulp project that gets built on load. Do not add tasks directly to the gulp file -- include the gulp file in the main gulp file, then trigger it in the main gulp file. If you do not want to use gulp, you can choose not to. 
 
 ## How to get started
 
@@ -14,7 +26,7 @@ If you need a component, first check to see if someone else wants it! Go to the 
 
 If you want to contribute a component, again, first check to see if someone else wants it or if someone else built it already. Go to the ["Need Component" issue section](https://github.com/web-illinois/shared-components/labels/need%20component) and scan if something there meets your needs. If no one needs it, [create an issue](https://github.com/web-illinois/shared-components/issues) and give it the "Have Component" label. 
 
-If you wish to use an existing component, you can either access the files directly on `https://contrib.webtheme.illinois.edu`, or copy the files and host them on your website. Because this is tied to the Illinois Toolkit, you should have this installed on your website. 
+If you wish to use an existing component, you can either access the files directly on `https://contrib.webtheme.illinois.edu`, or copy the files and host them on your website. 
 
 ## Rules (or "How to Get Along")
 
@@ -50,12 +62,6 @@ Shared components should have a README.md file at their root directory.
 * Any dependencies this component needs (a specific version of the Illinois Toolkit, bootstrap, jQuery, etc.).  
 * Examples or information on how to use this. Include code snippets of what files need to be included.
 * A userlist of other developers that use this.
-
-## Continuous Integration and Gulp
-
-Any changes to the main branch gets pushed to the `https://contrib.webtheme.illinois.edu` site. Please make sure you create a branch with your Net ID, merge to develop, then merge to main. Do not make changes directly to the main branch or develop branch. 
-
-This project has a gulp project. As more projects get built, you can use this to run gulp tasks. Do not add tasks directly to the gulp file -- include the gulp file in the main gulp file, then trigger it in the main gulp file. 
 
 ## Run into problems?
 
