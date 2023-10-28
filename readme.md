@@ -13,11 +13,26 @@ An end user can then consume your code by adding HTML tags like the following (u
 
 **Each folder in this repository is independent of each other.** This may mean that using multiple folders is "chatty" and requires multiple calls to the contrib.webtheme.illinois.edu URL, but that is a feature, not a bug. 
 
+Despite this being called "shared components", this isn't limited to web components. Contents may include
+
+* Formal web components
+* Javascript files
+* CSS files
+* Images and other resources
+
 ## Use and Expectations
 
-**Everything is a *use as is*.** WIGG doesn't have any code review process in terms of accessibility, security, cross-platform use, or usability. 
+**Everything is *use as is*.** There are no code review process in terms of accessibility, security, cross-platform use, or usability. 
 
 Authors are responsible for their own components inside this github repository.
+
+## How to get started
+
+If you need something, first check to see if someone else wants it! Go to the ["Need Component" issue section](https://github.com/web-illinois/shared-components/labels/need%20component) and the ["Have Component" issue section](https://github.com/web-illinois/shared-components/labels/have%20component) and scan if something there meets your needs. If nothing there works, then post an issue and give it the "Need Component" label. 
+
+If you want to contribute something, again, first check to see if someone else wants it or if someone else built it already. Go to the ["Need Component" issue section](https://github.com/web-illinois/shared-components/labels/need%20component) and scan if something there meets your needs. If no one needs it, [create an issue](https://github.com/web-illinois/shared-components/issues) and give it the "Have Component" label. 
+
+If you wish to use an existing component, you can either access the files directly on `https://contrib.webtheme.illinois.edu`, or copy the files and host them on your website. 
 
 ### Packages
 
@@ -28,14 +43,6 @@ The shared-components uses NPM and [`package.json`](https://github.com/web-illin
 Any changes to the main branch gets pushed to the `https://contrib.webtheme.illinois.edu` site. Please make sure you create a branch, then merge to main. Do not make changes directly to the main branch. 
 
 If you need the continuous integration to build your code, modify the `package.json` to add a script and [`deploy_main.yml`](https://github.com/web-illinois/shared-components/blob/main/.github/workflows/deploy_main.yml) to include your npm script in the build process. 
-
-## How to get started
-
-If you need a component, first check to see if someone else wants it! Go to the ["Need Component" issue section](https://github.com/web-illinois/shared-components/labels/need%20component) and the ["Have Component" issue section](https://github.com/web-illinois/shared-components/labels/have%20component) and scan if something there meets your needs. If nothing there works, then post an issue and give it the "Need Component" label. 
-
-If you want to contribute a component, again, first check to see if someone else wants it or if someone else built it already. Go to the ["Need Component" issue section](https://github.com/web-illinois/shared-components/labels/need%20component) and scan if something there meets your needs. If no one needs it, [create an issue](https://github.com/web-illinois/shared-components/issues) and give it the "Have Component" label. 
-
-If you wish to use an existing component, you can either access the files directly on `https://contrib.webtheme.illinois.edu`, or copy the files and host them on your website. 
 
 ## Rules (or "How to Get Along")
 
