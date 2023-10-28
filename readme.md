@@ -4,39 +4,53 @@
 
 The [web-illinois Github organization](https://github.com/web-illinois) is meant for developers to share code. The traditional way to share client-side (JS and CSS) code is to [create and publish an NPM package](https://www.freecodecamp.org/news/how-to-create-and-publish-your-first-npm-package/). However, creating a package requires some skill on both the developer (to create the package) and the end user (to consume the package). You can also take your code on Github and [host your code on a cPanel instance](https://web.illinois.edu/). However, this requires some additional work to create the cPanel instance and copy the code from Github to cPanel, and there's no guarantee that the code on Github is the same as on the cPanel instance. 
 
-This shared components repository is a low-effort way to put files in Github, and these files will be pushed to a Tech Services AWS S3 bucket. Unlike [Illinois Toolkit](https://go.illinois.edu/webtoolkit) and [the formal WIGG groups](https://webtheme.illinois.edu/about/), this is distributed and "bottom-up" -- a way to crowdsource and share solutions without having to merge these changes to a common codebase. 
+This shared components repository is a low-effort way to put files in Github, and these files will be pushed to a Tech Services AWS S3 bucket. Unlike [Illinois Toolkit](https://go.illinois.edu/webtoolkit) and [the formal WIGG groups](https://webtheme.illinois.edu/about/), this is distributed and "bottom-up" -- a way to crowdsource and share solutions without having to combine the code into a single monolithic javascript and CSS file. 
 
 An end user can then consume your code by adding HTML tags like the following (using *ils-input* as an example):
 
     <script src="//contrib.webtheme.illinois.edu/ils-input/input.min.js"></script>
     <link rel="stylesheet" href="//contrib.webtheme.illinois.edu/ils-input/input.min.css" media="all">
 
-**Each folder in this repository is independent of each other.** This may mean that using multiple folders is "chatty" and requires multiple calls to the contrib.webtheme.illinois.edu URL, but that is a feature, not a bug. 
+**Each folder in this repository is independent of each other.** This may mean that using multiple components is "chatty" and requires multiple calls to the contrib.webtheme.illinois.edu URL, but that is the trade-off of using this method. 
 
-Despite this being called "shared components", this isn't limited to web components. Contents may include
-
+Despite this being called "shared components", this isn't limited to web components. Contents may include (but are not limited to)
 * Formal web components
-* Javascript files
+* Vanilla JavaScript files
+* jQuery files
 * CSS files
 * Images and other resources
+* JSON data files
 
 ## Use and Expectations
 
-**Everything is *use as is*.** There are no code review process in terms of accessibility, security, cross-platform use, or usability. 
-
-Authors are responsible for their own components inside this github repository.
+1. **Everything is *use as is*.** There are no code review process in terms of accessibility, security, cross-platform use, or usability. 
+2. Authors are responsible for their own components inside this github repository.
+3. If an author is going to pull or drastically change a component, they need to contact everyone listed on the component's README.md file.
+4. Users are responsible for keeping current the list of components they are using (via the components' README.md files) 
 
 ## How to get started
 
-If you need something, first check to see if someone else wants it! Go to the ["Need Component" issue section](https://github.com/web-illinois/shared-components/labels/need%20component) and the ["Have Component" issue section](https://github.com/web-illinois/shared-components/labels/have%20component) and scan if something there meets your needs. If nothing there works, then post an issue and give it the "Need Component" label. 
+### If you need something 
 
-If you want to contribute something, again, first check to see if someone else wants it or if someone else built it already. Go to the ["Need Component" issue section](https://github.com/web-illinois/shared-components/labels/need%20component) and scan if something there meets your needs. If no one needs it, [create an issue](https://github.com/web-illinois/shared-components/issues) and give it the "Have Component" label. 
+First check to see if someone else wants or has it! Go to the ["Need Component" issue section](https://github.com/web-illinois/shared-components/labels/need%20component) and the ["Have Component" issue section](https://github.com/web-illinois/shared-components/labels/have%20component) and scan if something there meets your needs. If nothing there works, then post an issue and give it the "Need Component" label. 
 
-If you wish to use an existing component, you can either access the files directly on `https://contrib.webtheme.illinois.edu`, or copy the files and host them on your website. 
+### If you want to contribute a new item
+
+Again, first check to see if someone else wants it or if someone else built it already. Go to the ["Need Component" issue section](https://github.com/web-illinois/shared-components/labels/need%20component) and scan if something there meets your needs. If no one needs it, [create an issue](https://github.com/web-illinois/shared-components/issues) and give it the "Have Component" label. 
+
+### If you wish to use an existing component "as is"
+
+You can either access the files directly on `https://contrib.webtheme.illinois.edu`, or copy the files and host them on your website. Contact the owner first so they can add you to the README.md of the component, or add your area to the component README.md file. 
+
+### If you wish to change an existing component 
+
+For example, the component does 95% of what you want it to do, or there's a bug that prevents you from using it. Contact the owner before making any changes. 
+
+## Map of the shared components
 
 ### Packages
 
-The shared-components uses NPM and [`package.json`](https://github.com/web-illinois/shared-components/blob/main/package.json) to manage the build process. If you need to add additional packages, feel free. Ensure that any packages that are added don't interfere with other components, and try to use existing packages when possible. 
+The shared-components uses NPM and [`package.json`](https://github.com/web-illinois/shared-components/blob/main/package.json) to manage the build process. You are not required to any existing packages. If you need to add additional packages, feel free. Ensure that any packages that are added don't interfere with other components, and try to use existing packages when possible. 
 
 ### Continuous Integration 
 
@@ -75,7 +89,7 @@ Shared components should have a README.md file at their root directory.
     * Abandoned on xx/yy/zzzz: This never met production status and should not be used. 
 * Any dependencies this component needs (a specific version of the Illinois Toolkit, bootstrap, jQuery, etc.).  
 * Examples or information on how to use this. Include code snippets of what files need to be included.
-* A userlist of other developers that use this.
+* A userlist of other areas on campus that use this.
 
 ## Run into problems?
 
