@@ -2,9 +2,9 @@
 
 ## What is this? 
 
-The *web-illinois* Github organization is meant for developers to share code. The traditional way to share code is to [create and publish an NPM package](https://www.freecodecamp.org/news/how-to-create-and-publish-your-first-npm-package/). However, creating a package requires some skill on both the developer (to create the package) and the end user (to consume the package). You can also take your code on Github and [host the code on a cPanel instance](https://web.illinois.edu/). However, this requires some additional work to create the cPanel instance and copy the code from Github to cPanel. 
+The [web-illinois Github organization](https://github.com/web-illinois) is meant for developers to share code. The traditional way to share client-side (JS and CSS) code is to [create and publish an NPM package](https://www.freecodecamp.org/news/how-to-create-and-publish-your-first-npm-package/). However, creating a package requires some skill on both the developer (to create the package) and the end user (to consume the package). You can also take your code on Github and [host your code on a cPanel instance](https://web.illinois.edu/). However, this requires some additional work to create the cPanel instance and copy the code from Github to cPanel, and there's no guarantee that the code on Github is the same as on the cPanel instance. 
 
-This shared components repository allows you to put files in Github, and these files will be pushed to a Tech Services AWS S3 bucket. Unlike [Illinois Toolkit](https://go.illinois.edu/webtoolkit) and [the formal WIGG groups](https://webtheme.illinois.edu/about/), this is distributed and "bottom-up" -- a way to crowdsource and share solutions without having to merge these changes to a common codebase. 
+This shared components repository is a low-effort way to put files in Github, and these files will be pushed to a Tech Services AWS S3 bucket. Unlike [Illinois Toolkit](https://go.illinois.edu/webtoolkit) and [the formal WIGG groups](https://webtheme.illinois.edu/about/), this is distributed and "bottom-up" -- a way to crowdsource and share solutions without having to merge these changes to a common codebase. 
 
 An end user can then consume your code by adding HTML tags like the following (using *ils-input* as an example):
 
