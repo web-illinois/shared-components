@@ -27,6 +27,15 @@ Required code to use in the body:
 
     <div class="ils-status"></div>
 
+To display alert cards for maintenance, affected, and down services, add the following parameters:
+- **data-ils-status-serviceids**: A list of the service IDs you want to display separated by commas.
+- **data-ils-status-template**: The value options are maintenance, affected, and down. If the parameter is missing, the down services will be displayed by default.
+- **data-ils-status-daysahead**: Use an integer to determine how much to look ahead (so "10" has everything from today to 10 days ahead). If the parameter is missing, it will include everything (including past events).
+
+Example
+
+    <div class="ils-status" data-ils-status-serviceids="65281,65280,64985" data-ils-status-template="maintenance" data-ils-status-daysahead="12"></div>
+
 The passthrough query is at https://statushub.itpartners.illinois.edu/api/GetSimpleStatus?name=illinois 
 
 The github for this middleware project is at https://github.com/itpartnersillinois/StatusSupport.
