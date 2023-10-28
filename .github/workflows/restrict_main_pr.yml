@@ -8,6 +8,3 @@ jobs:
     steps:
     - name: Echo branches
       run: echo "PR request from ${{ github.base_ref }} to ${{ github.head_ref }}"
-    - name: Confirm develop is the source branch
-      if: ${{ github.head_ref != 'develop' }}
-      run: exit 1

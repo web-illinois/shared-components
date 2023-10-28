@@ -13,7 +13,19 @@ jobs:
 
     - run: npm install
     - run: npm rebuild
-    - run: npm run-script gulp
+    - name: Run Gulp for ils-contentslider
+      run: npm run-script gulp ils-contentslider 
+    - name: Run Gulp for ils-twitter
+      run: npm run-script gulp ils-twitter 
+    - name: Run Gulp for ils-google-analytics
+      run: npm run-script gulp ils-google-analytics 
+    - name: Run Gulp for ils-input
+      run: npm run-script gulp ils-input 
+    - name: Run Gulp for ils-status
+      run: npm run-script gulp ils-status 
+    - name: Run Gulp for ils-xtwitter
+      run: npm run-script gulp ils-xtwitter 
+      
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
