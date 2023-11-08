@@ -1,0 +1,13 @@
+pre {
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    background: var(--alt-bg);
+    position: relative;
+    display: block;
+    margin: 2em 0 4em 0;
+    max-width: 100%;
+    overflow-x: auto;
+    background: var(--il-cloud);
+    border: 1px solid black;
+    padding: 10px 0;
+}
