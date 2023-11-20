@@ -1,0 +1,40 @@
+input#search-box {
+    border: solid 2px var(--il-cloud-3);
+    margin: 0 auto;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 15px;
+    width: 95%;
+    font-size: 18px;
+}
+
+input#search-box:focus {
+    border: solid 3px var(--il-harvest);
+}
+
+input#search-box:focus-visible {
+    border: dash 3px var(--il-harvest);
+}
+
+.text-search-wrapper {
+    position: relative;
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    padding: 0 15px;
+    list-style: none;
+    width: 95%;
+}
+
+.highlighted {
+    background-color: var(--il-harvest);
+}
