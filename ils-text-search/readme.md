@@ -12,8 +12,7 @@ Development on 11/20/2023
 
 Requires Illinois Toolkit, any version. Everything else is vanilla javascript/CSS.
 
-## Example of use
-
+[Example of use](https://sydneyflowers.web.illinois.edu/style-guide)
 
 ##Required code to use
 
