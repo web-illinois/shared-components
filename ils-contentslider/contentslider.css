@@ -15,6 +15,11 @@
     color: var(--il-orange);
 }
 
+ils-contentslider il-clickable-card h2::after, ils-contentslider il-clickable-card h3::after, ils-contentslider il-clickable-card h4::after {
+  --il-clickable-card-post: "";
+  display: none !important;
+}
+
 .ils-contentslider-calendar p {
     font-size: 1.6rem;  
     line-height: 1.8rem;
