@@ -58,6 +58,15 @@ button.ils-contentslider-next {
 button.ils-contentslider-next svg {
     transform: rotate(90deg);
 }
+@media only screen and (max-width: 550px) {
+  div.ils-contentslider-outer {
+    flex-direction: column;
+  }
+
+  button.ils-contentslider-prev, button.ils-contentslider-next {
+    width: 100%;
+  }
+}
 </style>
 <div class='ils-contentslider-outer'><button class='ils-contentslider-prev' aria-label='scroll back in content slider'>
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="presentation">
