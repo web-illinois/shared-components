@@ -35,6 +35,10 @@ Required code to use:
 
 [Example of use](https://contrib.webtheme.illinois.edu/toolkit-lite-v2/example.html)
 
+## Notes
+
+Because this is meant to mirror the existing toolkit, this is using the `il-` namespace instead of the `ils-` namespace. 
+
 ## Userlist
 
 
