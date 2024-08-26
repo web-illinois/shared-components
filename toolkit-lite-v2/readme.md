@@ -28,8 +28,8 @@ Required code to use:
 <script src="https://cdn.brand.illinois.edu/components/il-header.mjs" type="module" async></script>
 <script src="https://cdn.brand.illinois.edu/components/il-footer.mjs" type="module" async></script>
 
-<link type="text/css" rel="stylesheet" href="//contrib.webtheme.illinois.edu/toolkit_lite/toolkit.css"> 
-<script src="//contrib.webtheme.illinois.edu/toolkit_lite/toolkit.js"></script>
+<link type="text/css" rel="stylesheet" href="//contrib.webtheme.illinois.edu/toolkit-lite-v2/toolkit.css"> 
+<script src="//contrib.webtheme.illinois.edu/toolkit-lite-v2/toolkit.js"></script>
 
 ```
 
