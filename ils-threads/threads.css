@@ -1,0 +1,29 @@
+.il-footer-social a[href*="threads.net/"]::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: 12px 0 0 6px;
+    background-color: white;
+    -webkit-mask-image: url(//contrib.webtheme.illinois.edu/ils-threads/threads.svg);
+    mask-image: url(//contrib.webtheme.illinois.edu/ils-threads/threads.svg);
+}
+
+.il-footer-social a[href*="threads.net/"] {
+    position: relative;
+    margin: -4px -6px;
+    padding: 0;
+    height: 48px;
+    overflow: hidden;
+    width: 48px;
+    text-indent: 200%;
+    white-space: nowrap;
+    font: normal 30px var(--il-icons-line);
+    background-color: transparent;
+    color: var(--il-link-color);
+    border-radius: 0;
+}
+
+.il-footer-social a[href*="threads.net/"]:hover::before, .il-footer-social a[href*="threads.net/"]:focus::before {
+    background-color: var(--il-orange);
+}
