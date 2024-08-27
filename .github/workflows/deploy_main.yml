@@ -23,6 +23,8 @@ jobs:
       run: npm run-script gulp ils-input 
     - name: Run Gulp for ils-status
       run: npm run-script gulp ils-status 
+    - name: Run Gulp for ils-threads
+      run: npm run-script gulp ils-threads 
     - name: Run Gulp for ils-xtwitter
       run: npm run-script gulp ils-xtwitter 
       
