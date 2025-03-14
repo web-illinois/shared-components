@@ -17,4 +17,19 @@ gulp.task("styles", function () {
         .pipe(gulp.dest("ils-input/"));
 });
 
-gulp.task("ils-input", gulp.series("scripts", "styles"));
+gulp.task("scripts3", function () {
+    return gulp.src(['ils-input/input3.js'])
+        .pipe(terser())
+        .pipe(concat("input3.min.js"))
+        .pipe(gulp.dest("ils-input/"));
+});
+
+gulp.task("styles3", function () {
+    return gulp.src(['ils-input/input3.css'])
+        .pipe(cssmin())
+        .pipe(concat("input3.min.css"))
+        .pipe(gulp.dest("ils-input/"));
+});
+
+
+gulp.task("ils-input", gulp.series("scripts", "styles", "scripts3", "styles3"));
