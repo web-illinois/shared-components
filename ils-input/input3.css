@@ -1,0 +1,301 @@
+:root {
+    --ils-input-form-label-width: 225px;
+    --ils-input-form-vertical-label-width: 125px;
+}
+
+input[type='submit'].ilw-button, input[type='cancel'].ilw-button {
+    background-color: var(--ilw-button--background-color);
+    border: 2px solid var(--ilw-button--border-color);
+    border-radius: .25em;
+    color: var(--ilw-button--foreground-color);
+    cursor: pointer;
+    display: inline-block;
+    font: 700 1.188rem / 1.25rem var(--il-font-sans);
+    letter-spacing: .01em;
+    margin: 6px 0;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+input[type='submit'].ilw-button:active, input[type='cancel'].ilw-button:active {
+  background-color: var(--ilw-button--active-background-color);
+  border-color: var(--ilw-button--active-border-color);
+  color: var(--ilw-button--active-color);
+  outline: solid var(--ilw-button--active-border-color) 2px;
+}
+
+input[type='submit'].ilw-button:focus, input[type='cancel'].ilw-button:focus {
+  background-color: var(--ilw-link--focus-background-color);
+  border-color: var(--ilw-link--focus-color);
+  color: var(--ilw-link--focus-color);
+  outline: var(--ilw-link--focus-outline);
+}
+
+input[type='submit'].ilw-button:hover, input[type='cancel'].ilw-button:hover {
+  background-color: var(--ilw-button--focused-background-color);
+  border-color: var(--ilw-button--focused-border-color);
+  color: var(--ilw-button--focused-foreground-color);
+  outline: 0;
+}
+
+input[type='submit'].ilw-button:focus, input[type='submit'].ilw-button:hover, input[type='cancel'].ilw-button:focus, input[type='cancel'].ilw-button:hover {
+  text-decoration: underline;
+}
+
+
+ilw-content .ils-input-entry {
+    margin: 20px 0;
+}
+
+ilw-content label, ilw-content legend, ilw-content .ils-input-alert {
+    display: block;
+    color: var(--il-blue);
+    font: normal 700 1.25rem/1.5rem var(--il-font-sans);
+    margin: 0;
+    text-align: left;
+    padding: 0 0 5px 0;
+}
+
+ilw-content select, ilw-content input, ilw-content textarea, ilw-content datalist, ilw-content datalist option {
+    margin: 0;
+    border-radius: 5px;
+    padding: 10px;
+    font: 1rem/1.125rem var(--il-font-sans);
+    background-color: #fff;
+    border: thin var(--il-blue) solid;
+    width: 200px;
+  }
+
+ilw-content input.ils-input-long, ilw-content textarea, ilw-content select.ils-input-long {
+  width: calc(100% - 20px);
+}
+  
+ilw-content input.ils-input-short {
+  width: 100px;
+}
+
+ilw-content input:focus, ilw-content textarea:focus, ilw-content select:focus, ilw-content input:focus-visible, ilw-content textarea:focus-visible, ilw-content select:focus-visible {
+    background: var(--il-storm-lighter-4);
+    outline: 3px solid var(--il-altgeld);
+  }
+
+  ilw-content input:hover, ilw-content textarea:hover, ilw-content select:hover {
+    background: var(--il-storm-lighter-4);
+  }
+
+  ilw-content button[disabled], ilw-content button[disabled]:focus, ilw-content button[disabled]:hover {
+    background: var(--il-gray-1);
+    color: var(--il-gray-2);
+    border-color: var(--il-gray-2);
+}
+
+ilw-content .ils-input-entry p, ilw-content .ils-input-entry-compact p {
+    color: var(--il-storm);
+    font: 1rem / 1.125rem var(--il-font-sans);
+    padding-top: 3px;
+    margin: 0;
+    grid-column: 1 / span 2;
+    width: fit-content;
+}
+
+.ils-label-required::after {
+    content: '*';
+    font-size: 2em;
+    vertical-align: middle;
+    vertical-align: -moz-middle-with-baseline;
+    padding-left: 2px;
+    color: var(--il-altgeld);  
+  }
+
+ilw-content .ils-input-alert {
+    color: red;
+    padding: 0 5px;
+    border-bottom: thin dashed;
+    width: fit-content;
+}
+
+.ils-input-entry-compact, .ils-input-entry-checkbox {
+    display: grid;
+    align-items: center;
+    margin: auto;
+    grid-template-columns: var(--ils-input-form-label-width) auto;
+    margin: 20px 0;
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+.ils-input-entry-compact label, .ils-input-entry-checkbox label {
+    text-align: right;
+    padding: 0;
+}
+
+ilw-content input[type="checkbox"], ilw-content input[type="radio"] {
+    width: 18px;
+    height: 18px;
+  }
+
+ilw-content .ils-input-entry-radio {
+  display: grid;
+  align-items: center;
+  grid-template-columns: var(--ils-input-form-label-width) 20px auto;
+  margin: 20px 0;
+}
+
+ilw-content .ils-input-entry-radio p {
+  text-align: right;
+  margin: 0 15px 0 0;
+  font-weight: 600;
+  line-height: 1.4rem;
+}
+
+ilw-content .ils-input-entry-radio input {
+  grid-column: 2;
+  margin: 5px 0;
+}
+
+ilw-content .ils-input-entry-radio label {
+  grid-column: 3;
+  margin: 0 20px 0 5px;
+  text-align: left;
+}
+
+ilw-content .ils-input-entry-radio-vertical {
+  display: grid;
+  align-items: center;
+  grid-template-columns: var(--ils-input-form-label-width) repeat(auto-fill, 20px var(--ils-input-form-vertical-label-width));
+  margin: 20px 0;
+}
+
+ilw-content .ils-input-entry-radio-vertical p {
+  text-align: right;
+  margin: 0 15px 0 0;
+  font-weight: 600;
+  line-height: 1.4rem;
+}
+
+ilw-content .ils-input-entry-radio-vertical label {
+  margin: 0 20px 0 5px;
+  text-align: left;
+}
+
+ilw-content fieldset, ilw-content .ils-input-disclaimer {
+  padding: 20px;
+  margin: 20px auto;
+  border: thin solid var(--il-orange);
+}
+
+ilw-content .ils-input-disclaimer {
+  display: flex;
+  align-items: center;
+}
+
+.ils-toggle-slider {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+ilw-content .ils-toggle-slider input[type="checkbox"] {
+  z-index: 10;
+  position: relative;
+  color: transparent;
+  width: 60px;
+  height: 34px;
+  background: transparent;
+  border: transparent;
+  outline: none!important;
+  opacity: 0;
+}
+
+.ils-toggle-slider span {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--il-storm-lighter-1);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.ils-toggle-slider span:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #FFF;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.ils-toggle-slider input:checked + span {
+  background-color: var(--il-altgeld);
+}
+
+.ils-toggle-slider input:checked + span:before {
+  transform: translateX(26px);
+}
+
+.ils-toggle-slider input:focus + span {
+  outline: 3px solid var(--il-storm-lighter-1);
+  background-color: #FFF;
+}
+
+.ils-toggle-slider input:checked:focus + span {
+  outline: 3px solid var(--il-altgeld);
+  background-color: #FFF;
+}
+
+.ils-toggle-slider input:focus + span:before {
+  background-color: var(--il-storm-lighter-1);
+}
+
+.ils-toggle-slider input:checked:focus + span:before {
+  background-color: var(--il-altgeld);
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .ils-toggle-slider span, .ils-toggle-slider span:before {
+    transition: none;
+  }
+}
+
+  @media (max-width: 800px) {
+    .ils-input-entry-compact {
+        display: block;
+    }
+    .ils-input-entry-compact label {
+        text-align: left;
+        padding: 0 0 5px 0;
+    }
+    ilw-content .ils-input-entry-radio-vertical {
+      display: grid;
+      align-items: center;
+      grid-template-columns: var(--ils-input-form-label-width) 20px auto;
+      margin: 20px 0;
+    }
+    
+    ilw-content .ils-input-entry-radio-vertical p {
+      text-align: right;
+      margin: 0 15px 0 0;
+      font-weight: 600;
+      line-height: 1.4rem;
+    }
+    
+    ilw-content .ils-input-entry-radio-vertical input {
+      grid-column: 2;
+      margin: 5px 0;
+    }
+    
+    ilw-content .ils-input-entry-radio-vertical label {
+      grid-column: 3;
+      margin: 0 20px 0 5px;
+      text-align: left;
+    }
+  }
