@@ -58,6 +58,10 @@ ilw-content label, ilw-content legend, ilw-content .ils-input-alert {
     padding: 0 0 5px 0;
 }
 
+ilw-content label {
+  cursor: pointer;
+}
+
 ilw-content select, ilw-content input, ilw-content textarea, ilw-content datalist, ilw-content datalist option {
     margin: 0;
     border-radius: 5px;
@@ -210,7 +214,7 @@ ilw-content .ils-toggle-slider input[type="checkbox"] {
   opacity: 0;
 }
 
-.ils-toggle-slider span {
+.ils-toggle-slider > span .container {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -222,7 +226,7 @@ ilw-content .ils-toggle-slider input[type="checkbox"] {
   border-radius: 34px;
 }
 
-.ils-toggle-slider span:before {
+.ils-toggle-slider > span .container:before {
   position: absolute;
   content: "";
   height: 26px;
@@ -234,30 +238,62 @@ ilw-content .ils-toggle-slider input[type="checkbox"] {
   border-radius: 50%;
 }
 
-.ils-toggle-slider input:checked + span {
+.ils-toggle-slider input:checked + span .container {
   background-color: var(--il-altgeld);
 }
 
-.ils-toggle-slider input:checked + span:before {
+.ils-toggle-slider input:checked + span .container:before {
   transform: translateX(26px);
 }
 
-.ils-toggle-slider input:focus + span {
+.ils-toggle-slider input:focus + span .container {
   outline: 3px solid var(--il-storm-lighter-1);
   background-color: #FFF;
 }
 
-.ils-toggle-slider input:checked:focus + span {
+.ils-toggle-slider input:checked:focus + span .container {
   outline: 3px solid var(--il-altgeld);
   background-color: #FFF;
 }
 
-.ils-toggle-slider input:focus + span:before {
+.ils-toggle-slider input:focus + span .container:before {
   background-color: var(--il-storm-lighter-1);
 }
 
-.ils-toggle-slider input:checked:focus + span:before {
+.ils-toggle-slider input:checked:focus + span .container:before {
   background-color: var(--il-altgeld);
+}
+
+.ils-toggle-slider > span .text-on {
+  display: none;
+  position: absolute;
+  top: 5px;
+  left: 70px;
+  right: 0;
+  bottom: 0;
+  color: var(--il-blue);
+  font: normal 400 1.25rem / 1.5rem var(--il-font-sans);
+  margin: 0;
+}
+
+.ils-toggle-slider > span .text-off {
+  display: inline;
+  position: absolute;
+  top: 5px;
+  left: 70px;
+  right: 0;
+  bottom: 0;
+  color: var(--il-blue);
+  font: normal 400 1.25rem / 1.5rem var(--il-font-sans);
+  margin: 0;
+}
+
+.ils-toggle-slider > input:checked + span .text-on {
+  display: inline;
+}
+
+.ils-toggle-slider > input:checked + span .text-off {
+  display: none;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
