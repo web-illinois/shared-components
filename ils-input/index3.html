@@ -195,13 +195,17 @@
         <div class="ils-input-entry">
             <label>Toggle Button, starts enabled</label>
             <button id="toggle-enabled" class="ilw-button" aria-pressed="true" data-ils-input-on="Enabled" data-ils-input-off="Disabled"></button>
+            <p>This should be used when the effect happens immediately.</p>
         </div>
         <pre></pre>
         <div class="ils-input-entry">
             <div class="ils-input-entry-compact">
                 <label for="toggle-checkbox">Toggle Checkbox </label>
                 <div class="ils-toggle-slider">
-                    <input id="toggle-checkbox" type="checkbox" role="switch"><span><span class="container"></span><span aria-hidden="true" class="text-on">On</span><span aria-hidden="true" class="text-off">Off</span></span>
+                    <input id="toggle-checkbox" type="checkbox" role="switch"><span>
+                        <span class="ils-container"></span>
+                        <span aria-hidden="true" class="ils-text-on">On</span>
+                        <span aria-hidden="true" class="ils-text-off">Off</span></span>
                 </div>
             </div>
         </div>
