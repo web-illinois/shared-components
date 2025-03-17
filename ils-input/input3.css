@@ -75,7 +75,11 @@ ilw-content select, ilw-content input, ilw-content textarea, ilw-content datalis
 ilw-content input.ils-input-long, ilw-content textarea, ilw-content select.ils-input-long {
   width: calc(100% - 20px);
 }
-  
+
+ilw-content textarea {
+  height: 100px;
+}
+
 ilw-content input.ils-input-short {
   width: 100px;
 }
@@ -195,7 +199,7 @@ ilw-content .ils-input-disclaimer {
   align-items: center;
 }
 
-.ils-toggle-slider {
+ilw-content .ils-toggle-slider {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -214,7 +218,7 @@ ilw-content .ils-toggle-slider input[type="checkbox"] {
   opacity: 0;
 }
 
-.ils-toggle-slider > span .container {
+ilw-content .ils-toggle-slider > span .ils-container {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -226,7 +230,7 @@ ilw-content .ils-toggle-slider input[type="checkbox"] {
   border-radius: 34px;
 }
 
-.ils-toggle-slider > span .container:before {
+ilw-content .ils-toggle-slider > span .ils-container:before {
   position: absolute;
   content: "";
   height: 26px;
@@ -238,33 +242,33 @@ ilw-content .ils-toggle-slider input[type="checkbox"] {
   border-radius: 50%;
 }
 
-.ils-toggle-slider input:checked + span .container {
+ilw-content .ils-toggle-slider input:checked + span .ils-container {
   background-color: var(--il-altgeld);
 }
 
-.ils-toggle-slider input:checked + span .container:before {
+ilw-content .ils-toggle-slider input:checked + span .ils-container:before {
   transform: translateX(26px);
 }
 
-.ils-toggle-slider input:focus + span .container {
+ilw-content .ils-toggle-slider input:focus + span .ils-container {
   outline: 3px solid var(--il-storm-lighter-1);
   background-color: #FFF;
 }
 
-.ils-toggle-slider input:checked:focus + span .container {
+ilw-content .ils-toggle-slider input:checked:focus + span .ils-container {
   outline: 3px solid var(--il-altgeld);
   background-color: #FFF;
 }
 
-.ils-toggle-slider input:focus + span .container:before {
+ilw-content .ils-toggle-slider input:focus + span .ils-container:before {
   background-color: var(--il-storm-lighter-1);
 }
 
-.ils-toggle-slider input:checked:focus + span .container:before {
+ilw-content .ils-toggle-slider input:checked:focus + span .ils-container:before {
   background-color: var(--il-altgeld);
 }
 
-.ils-toggle-slider > span .text-on {
+ilw-content .ils-toggle-slider > span .ils-text-on {
   display: none;
   position: absolute;
   top: 5px;
@@ -276,7 +280,7 @@ ilw-content .ils-toggle-slider input[type="checkbox"] {
   margin: 0;
 }
 
-.ils-toggle-slider > span .text-off {
+ilw-content .ils-toggle-slider > span .ils-text-off {
   display: inline;
   position: absolute;
   top: 5px;
@@ -288,11 +292,11 @@ ilw-content .ils-toggle-slider input[type="checkbox"] {
   margin: 0;
 }
 
-.ils-toggle-slider > input:checked + span .text-on {
+ilw-content .ils-toggle-slider > input:checked + span .ils-text-on {
   display: inline;
 }
 
-.ils-toggle-slider > input:checked + span .text-off {
+ilw-content .ils-toggle-slider > input:checked + span .ils-text-off {
   display: none;
 }
 
