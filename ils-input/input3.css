@@ -214,8 +214,8 @@ ilw-content .ils-toggle-slider input[type="checkbox"] {
   height: 34px;
   background: transparent;
   border: transparent;
-  outline: none!important;
   opacity: 0;
+  cursor: pointer;
 }
 
 ilw-content .ils-toggle-slider > span .ils-container {
@@ -250,50 +250,43 @@ ilw-content .ils-toggle-slider input:checked + span .ils-container:before {
   transform: translateX(26px);
 }
 
-ilw-content .ils-toggle-slider input:focus + span .ils-container {
-  outline: 3px solid var(--il-storm-lighter-1);
-  background-color: #FFF;
+ilw-content .ils-toggle-slider input:focus + span span {
+  outline: 3px solid var(--il-blue);
 }
 
-ilw-content .ils-toggle-slider input:checked:focus + span .ils-container {
-  outline: 3px solid var(--il-altgeld);
-  background-color: #FFF;
-}
-
-ilw-content .ils-toggle-slider input:focus + span .ils-container:before {
-  background-color: var(--il-storm-lighter-1);
-}
-
-ilw-content .ils-toggle-slider input:checked:focus + span .ils-container:before {
-  background-color: var(--il-altgeld);
-}
 
 ilw-content .ils-toggle-slider > span .ils-text-on {
   display: none;
   position: absolute;
-  top: 5px;
   left: 70px;
   right: 0;
   bottom: 0;
   color: var(--il-blue);
   font: normal 400 1.25rem / 1.5rem var(--il-font-sans);
   margin: 0;
+  width: 50px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
 }
 
 ilw-content .ils-toggle-slider > span .ils-text-off {
-  display: inline;
+  display: flex;
   position: absolute;
-  top: 5px;
   left: 70px;
   right: 0;
   bottom: 0;
   color: var(--il-blue);
   font: normal 400 1.25rem / 1.5rem var(--il-font-sans);
   margin: 0;
+  width: 50px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
 }
 
 ilw-content .ils-toggle-slider > input:checked + span .ils-text-on {
-  display: inline;
+  display: flex;
 }
 
 ilw-content .ils-toggle-slider > input:checked + span .ils-text-off {
