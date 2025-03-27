@@ -72,7 +72,7 @@ ilw-content select, ilw-content input, ilw-content textarea, ilw-content datalis
   width: 200px;
 }
 
-ilw-content select {
+ilw-content select:not([size]) {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
