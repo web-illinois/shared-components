@@ -52,7 +52,7 @@ ilw-content .ils-input-entry {
 ilw-content label, ilw-content legend, ilw-content .ils-input-alert {
     display: block;
     color: var(--il-blue);
-    font: normal 700 1.25rem/1.5rem var(--il-font-sans);
+    font: normal 500 1.25rem/1.5rem var(--il-font-sans);
     margin: 0;
     text-align: left;
     padding: 0 0 5px 0;
@@ -88,6 +88,7 @@ ilw-content input.ils-input-long, ilw-content textarea, ilw-content select.ils-i
 
 ilw-content textarea {
   height: 100px;
+  font: 1rem/1.25rem var(--il-font-sans);
 }
 
 ilw-content input.ils-input-short {
