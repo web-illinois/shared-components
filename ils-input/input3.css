@@ -207,6 +207,7 @@ ilw-content fieldset, ilw-content .ils-input-disclaimer {
 
 ilw-content .ils-input-disclaimer {
   display: flex;
+  column-gap: 30px;
   align-items: center;
 }
 
