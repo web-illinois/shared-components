@@ -14,6 +14,8 @@ div.ils-contentslider {
     scroll-snap-type: x mandatory;
     padding-right: 10px;
     scroll-behavior: smooth;
+    width: 100%;
+    justify-content: safe center;
 }
 div.ils-contentslider ::slotted(*) {
     flex-shrink: 0;
